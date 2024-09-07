@@ -1,9 +1,133 @@
-.Foto_Perfil{
-    border-radius: 100%;
-    max-width: 200px;
-    border: 1px solid black;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
-    background-color: #f7f7f7;
+body {
+    background-color: #f0f0f0; /* Cor de fundo para o corpo da página */
+    background-image: url(imagens/img_blu.jfif);
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    /* Remova overflow: hidden para permitir a rolagem */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Alterado para fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/img_blu.jfif); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    filter: blur(10px); /* Aplica o desfoque */
+    opacity: 0.5; /* Ajusta a transparência da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+    background-color: #fff; /* Cor de fundo do contêiner principal */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    flex-direction: column; /* Alinha verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    background-color: #80bfff; /* Azul claro para o cabeçalho */
+    color: #003366; /* Cor escura para o texto no cabeçalho */
+    padding: 20px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile-pic {
+    width: 150px; /* Aumenta a largura da imagem */
+    height: 150px; /* Aumenta a altura da imagem */
+    border-radius: 50%; /* Mantém a imagem circular */
+    margin-bottom: 10px;
+}
+
+.header-info {
+    flex: 1;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #002244; /* Cor mais escura para o subtítulo */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff; /* Cor de fundo para o corpo do currículo */
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #003366; /* Cor dos links para combinar com o cabeçalho */
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #002244; /* Cor dos links ao passar o mouse para um azul mais escuro */
+    
+}
+
+#link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.1s ease; /* Transição suave */
+}
+
+/* Efeito de aumento no hover para o link com ID */
+#link:hover {
+    transform: scale(2); /* Aumenta o tamanho em 20% */
 }
