@@ -3,46 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo Guilherme Rodrigues</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Currículo - Guilherme Rodrigues</title>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <section>
-                    <h1>Guilherme Rodrigues</h1>
-                    <img class="Foto_Perfil" src="assets/imagens/img.png">
+        <!-- Cabeçalho -->
+        <header>
+            <img src="imagens/img.png" alt="Foto de Guilherme Rodrigues" class="profile-pic">
+            <div class="header-info">
+                <h1>Guilherme Rodrigues</h1>
+                <h2>Graduando em Engenharia da Computação</h2>
+                <p>Avenida Luís Viana, 6631 - Salvador, Bahia</p>
+                <p>(71) 98538-9396</p>
+                <p>guiga.arodrigues@gmail.com</p>
+                <p><a id="link" href="http://linkedin.com/in/guilherme-rodrigues-14160a22b" target="_blank">LinkedIn</a></p>
+            </div>
+        </header> 
+
+        <div class="main-content">
+            <!-- Coluna Esquerda -->
+            <div class="left-column">
+                <!-- Seção Sobre -->
+                <section class="about">
+                    <h3>Sobre</h3>
+                    <p>Carreira em evolução na área de engenharia da computação, habilidade para atuar na área de resolução de problemas de software, disposto a ouvir para aprender com pessoas mais experientes na área, por considerar que é necessário e um dos caminhos para o desenvolvimento profissional, assim poderei sempre prestar um serviço que acredito ser de qualidade.
+                        Sou profissional com experiência no TJBA(Tribunal de Justiça da Bahia). Além disso trabalho em desenvolvimento Python para Ciência de Dados e Automação de Processos Robóticos(RPA), também possuo expertise em construção de dashboard no Power BI e integração de Base de Dados com Excel e Sharepoint Online. Estou atualmente buscando me desenvolver na área de Ciência de Dados, com foco em Machine Learning.
+                    </p>
+                </section>
+
+                <!-- Seção Experiência Profissional -->
+                <section class="experience">
+                    <h3>Experiência Profissional</h3>
+                    <div class="experience-item">
+                        <h4>Tribunal de Justiça da Bahia (TJBA)</h4>
+                        <p>
+                        No Tribunal de Justiça da Bahia, trabalhei no setor da Labjus, onde fiquei responsável no desenvolvimento de implementações de automações utilizando Python,
+                        além de Power Automate, Power Apps e Sharepoint, softwares low code da Microsoft para desenvolvimento, os quais contribuiram para meu desenvolvimento sobre 
+                        boas práticas na construção de sites e aplicativos, 
+                        afim de entregar uma otima experiência para o usuário, tive a oportunidade de poder desenvolver soluções de software, das quais melhoraram significativamente 
+                        a eficiência operacional de diversos setores do Tribunal de Justiça. E por ultimo tive a oportunidade de também desenvolver soluções de software utilizando de 
+                        HTML, CSS e JavaScript, solução a qual além de ser utilizado pelo próprio Tribunal de Justiça, foram utilizado em outras Regiões do Estado da Bahia.
+                    </p>
+                    </div>
+                </section>
+                
+
+                <!-- Seção Projetos -->
+                <section class="projects">
+                    <h3>Projetos</h3>
+                    <div class="project-item">
+                        <h4>Desenvolvimento de scripts em Python</h4>
+                        <p>Análise de dados e automação de tarefas rotineiras. Implementação de RPA para otimização de processos manuais e repetitivos.</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>Criação de Dashboards Interativos</h4>
+                        <p>Uso do Power BI para criar dashboards informativos e interativos, fornecendo insights valiosos.</p>
+                    </div>
                 </section>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <section>
+
+            <!-- Coluna Direita -->
+            <div class="right-column">
+                <!-- Seção hardskills -->
+                <section class="skills">
+                    <h3>Hard Skills</h3>
                     <ul>
-                        <h2>Contatos</h2>
-                        <li>Endereço: Avenida Luis Viana Filho, 6631 - Salvador, Bahia</li>
-                        <li>Telefone: (71)98538-9396</li>
-                        <li>Email: Guiga.arodrigues@gmail.com</li>
-                        <li>Linkedin: <a href="http://linkedin.com/in/guilherme-rodrigues-14160a22b", target="_blank">Guilherme Rodrigues</a></li>
-                    </ul>
-                </section> 
-            </div> 
-            <div class="col-6">
-                <section>
-                    <ul>
-                        <h2>Idiomas</h2>
-                        <li>Português Fluente</li>
-                        <li>Inglês Avançado</li>
-                        <li>Espanhol Intermediário</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Excel</li>
+                        <li>Power Platform</li>
+                        <li>SharePoint</li>
                     </ul>
                 </section>
+
+                <section class="skills"></section>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Boa Comunicação</li>
+                        <li>Trabalho em Equipe</li>
+                        <li>Resolução de Problemas</li>
+                        <li>Escuta Ativa</li>
+                    
+                    </ul>
+                </section>
+
+                <!-- Seção Idiomas -->
+                <section class="languages">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Inglês (Avançado)</li>
+                        <li>Espanhol (Intermediário)</li>
+                        <li>Português (Fluente)</li>
+                    </ul>
+                </section>
+
+                
             </div>
         </div>
     </div>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </html>
